@@ -1,0 +1,133 @@
+#Creating a empty list to be able to store variables
+board_1 = ["|___|"]
+board_2 = ["|___|"]
+board_3 = ["|___|"]
+
+#Making the empty list into column of 3
+board_1 *= 3
+board_2 *= 3
+board_3 *= 3
+
+sample_input = int(input("Enter a number between 1-9: "))
+
+print(sample_input)
+
+counter = 0
+while(counter < 9):
+	if (sample_input < 1 or sample_input > 9):
+		sample_input = int(input("Please enter a valid digit between 1 and 9: "))
+		print(sample_input)
+		continue
+	else:
+		if counter < 8:
+			sample_input = int(input("Enter a number between 1-9: "))
+			print(sample_input)
+		elif(sample_input == 1 and player_1 == 'X'):
+			del board_1[0]
+			board_1.insert(0, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 1 and player_1 == 'O'):
+			del board_1[0]
+			board_1.insert(0, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 2 and player_1 == 'X'):
+			del board_1[1]
+			board_1.insert(1, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 2 and player_1 == 'O'):
+			del board_1[1]
+			board_1.insert(1, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 3 and player_1 == 'X'):
+			del board_1[2]
+			board_1.insert(2, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 3 and player_1 == 'O'):
+			del board_1[2]
+			board_1.insert(2, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 4 and player_1 == 'X'):
+			del board_2[0]
+			board_2.insert(0, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 4 and player_1 == 'O'):
+			del board_2[0]
+			board_2.insert(0, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 5 and player_1 == 'X'):
+			del board_2[1]
+			board_2.insert(1, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 5 and player_1 == 'O'):
+			del board_2[1]
+			board_2.insert(1, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 6 and player_1 == 'X'):
+			del board_2[2]
+			board_2.insert(2, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 6 and player_1 == 'O'):
+			del board_2[2]
+			board_2.insert(2, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 7 and player_1 == 'X'):
+			del board_3[0]
+			board_3.insert(0, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 7 and player_1 == 'O'):
+			del board_3[0]
+			board_3.insert(0, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 8 and player_1 == 'X'):
+			del board_3[1]
+			board_3.insert(1, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 8 and player_1 == 'O'):
+			del board_3[1]
+			board_3.insert(1, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 9 and player_1 == 'X'):
+			del board_3[2]
+			board_3.insert(2, '| X |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+		elif(sample_input == 9 and player_1 == 'O'):
+			del board_3[2]
+			board_3.insert(2, '| O |')
+			print("".join(board_1))
+			print("".join(board_2))
+			print("".join(board_3))
+	counter += 1
