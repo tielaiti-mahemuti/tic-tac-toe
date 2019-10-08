@@ -1,0 +1,10 @@
+print("Let's play some tic-tac-toe!")
+player_1 = player_input()
+if (player_1.upper() == 'X'):
+	player_2 = 'O'
+	print(f"Player 1 is: {player_1}")
+	print(f"Player 2 will be: {player_2}")
+else:
+	player_2 = 'X'
+	print(f"Player 1 is: {player_1}")
+	print(f"Player 2 will be: {player_2}")
