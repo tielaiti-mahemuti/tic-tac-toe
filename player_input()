@@ -1,0 +1,15 @@
+def player_input():
+	player_1 = input("Do you want to be 'X' or 'O'?: ")
+	print(player_1)
+	if(player_1.lower() == "x" or player_1.lower() == "o"):
+		print("Let's play!")
+	else:
+		while(player_1.lower() != 'x' or player_1.lower() != 'o'):
+			print("Enter valid input...")
+			player_1 = input("Do you want to be 'X' or 'O'?: ")
+			print(player_1)
+			if(player_1.lower() == "x" or player_1.lower() == "o"):
+				print("Let's Play!")
+				break
+
+	return(player_1.upper())
